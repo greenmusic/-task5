@@ -6,32 +6,32 @@ cd <ПАПКА_ПРОЕКТА>
 2. Установите зависимости для фронтенда
 Перейдите в папку с React-приложением:
 
-cd /my-react-mysql-app
+cd /app
 npm install
 
 3. Установите зависимости для сервера (если есть)
-Если у вас есть папка server внутри my-react-mysql-app:
+Если у вас есть папка server внутри app:
 
 cd server
 npm install
 
 4. Настройте базу данных (если требуется)
-Проверьте, есть ли у вас файл с SQL-дампом (например, bookstore.sql).
+Проверьте, есть ли у вас файл с SQL-дампом (например, travel_db.sql).
 Импортируйте его в вашу MySQL-базу данных через phpMyAdmin или командой:
 
-mysql -u <user> -p <database> < путь/к/bookstore.sql
+mysql -u <user> -p <database> < путь/к/travel_db.sql
 
 Проверьте настройки подключения к базе данных в файле server/config.js или аналогичном.
 
 5. Запустите сервер (бэкенд)
 
-cd /my-react-mysql-app/server
+cd /app/server
 npm start
 
 6. Запустите фронтенд (React)
 В новой вкладке терминала:
 
-cd /my-react-mysql-app
+cd /app
 npm start
 
 
