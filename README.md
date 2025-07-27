@@ -21,7 +21,15 @@ npm install
 
 mysql -u <user> -p <database> < путь/к/Dump20250720.sql
 
-Проверьте настройки подключения к базе данных в файле server/config.js или аналогичном.
+Проверьте настройки подключения к базе данных в файле server/index.js или аналогичном.
+
+const db = mysql.createPool({  
+    host: "localhost",
+    database: "travel_db",
+    user: "root",
+    password: ""
+});
+
 
 5. Запустите сервер (бэкенд)
 
